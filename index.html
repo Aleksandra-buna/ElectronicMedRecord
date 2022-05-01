@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>EMR</title>
+</head>
+<body>
+	<div class="container">
+		<aside>
+			<div class="top">
+				<div class="logo">
+					<img src="images/logo_emr.png">
+					<h2 class="header">Electronic<span class="danger"> Med </span>Record</h2>
+				</div>
+				<div class="close" id="btn-close">
+					<span class="material-icons-sharp">close</span>
+				</div>
+			</div>
+
+			<div class="sidebar">
+				<a href="#">
+					<span class="material-icons-sharp">settings_accessibility</span>
+					<h3>General information</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">coronavirus</span>
+					<h3>Anamnesis morbi</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">local_florist</span>
+					<h3>Anamnesis vitae</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">thermostat</span>
+					<h3>Status praesens</h3>
+				</a>
+				<a href="#" class="active">
+					<span class="material-icons-sharp">query_stats</span>
+					<h3>Examinations</h3>
+					<img src="images/exam.png">
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">checklist</span>
+					<h3>Diagnoses</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">vaccines</span>
+					<h3>Treatment plan</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">nordic_walking</span>
+					<h3>Recovery</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">add</span>
+					<h3>Add Information</h3>
+				</a>
+				<a href="#">
+					<span class="material-icons-sharp">logout</span>
+					<h3>Logout</h3>
+				</a>
+				
+			</div>
+		</aside>
+
+		<main>
+			<div class="titles">
+				<a href="#" class="active">
+					<h1>Lab tests</h1>
+					<img src="images/exam.png">
+				</a>
+				<a href="#">
+					<h1>Examinations</h1>
+				</a>
+				<a href="#">
+					<h1>Express-tests</h1>
+				</a>
+			</div>
+			
+			<div class="date">
+				<input type="date">
+			</div>
+
+			<div class="details">
+				<!------- start labs left -------->
+				<div class="labs-left">
+					<span class="material-icons-sharp">bloodtype</span>
+					<div class="mid">
+						<div class="left">
+							<h3>FibroTest</h3>
+							<h1>0.78(F4)</h1>
+						</div>
+						<div class="progress">
+							<svg>
+								<circle class="orange-circle" cx='46' cy='46' r='44'></circle>
+								<circle class="primary-left" cx='46' cy='46' r='44'></circle>
+							</svg>
+							<div class="persent">
+								<h3>78%</h3>
+							</div>
+						</div>
+					</div>
+					<small class="small-date">
+						updated 2 hours ago
+					</small>
+				</div>
+				<!------- start labs middle -------->
+				<div class="labs-middle">
+					<span class="material-icons-sharp">bloodtype</span>
+					<div class="mid">
+						<div class="left">
+							<h3>SteatoTest</h3>
+							<h1>0.92(S3)</h1>
+						</div>
+						<div class="progress">
+							<svg>
+								<circle class="red-circle" cx='46' cy='46' r='44'></circle>
+								<circle class="primary-mid" cx='46' cy='46' r='44'></circle>
+							</svg>
+							<div class="persent">
+								<h3>92%</h3>
+							</div>
+						</div>
+					</div>
+					<small class="small-date">
+						updated 3 hours ago
+					</small>
+				</div>
+				<!------- start labs right -------->
+				<div class="labs-right">
+					<span class="material-icons-sharp">bloodtype</span>
+					<div class="mid">
+						<div class="left">
+							<h3>NashTest</h3>
+							<h1>0.51(N1)</h1>
+						</div>
+						<div class="progress">
+							<svg>
+								<circle class="yellow-circle" cx='46' cy='46' r='44'></circle>
+								<circle class="primary-right" cx='46' cy='46' r='44'></circle>
+							</svg>
+							<div class="persent">
+								<h3>51%</h3>
+							</div>
+						</div>
+					</div>
+					<small class="small-date">
+						updated 5 hours ago
+					</small>
+				</div>
+			</div>
+
+			<div class="lab-diagnosis">
+				<h2>Laboratory diagnosis</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Result</th>
+							<th>Unit of measure</th>
+							<th>Reference values</th>
+							<th>Commentary</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST/ASaT</td>
+							<td>34</td>
+							<td>U/L</td>
+							<td>< 37</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>GLU</td>
+							<td>5.5</td>
+							<td>mMOL/L</td>
+							<td>3.3 - 5.5</td>
+							<td>on the high end of normal</td>
+						</tr>
+						<tr>
+							<td>ALT/ALaT</td>
+							<td class="warning">59</td>
+							<td>U/L</td>
+							<td>< 41</td>
+							<td class="warning"><span class="material-icons-sharp">error</span> </td>
+						</tr>
+						<tr>
+							<td>Сrearinine</td>
+							<td>72</td>
+							<td>U/L</td>
+							<td>48 - 140</td>
+							<td>-</td>
+						</tr>
+						<tr class="row hide">
+							<td>BIL total</td>
+							<td class="warning">64.2</td>
+							<td>mMOL/L</td>
+							<td>3.4 - 20.5</td>
+							<td class="warning"><span class="material-icons-sharp">error</span></td>
+						</tr>
+						<tr class="row hide">
+							<td>GGT</td>
+							<td class="warning">70</td>
+							<td>U/L</td>
+							<td>< 49</td>
+							<td class="warning"><span class="material-icons-sharp">error</span></td>
+						</tr>
+						<tr class="row hide">
+							<td>CHO total</td>
+							<td>9.6</td>
+							<td>mMOL/l</td>
+							<td>< 5.2</td>
+							<td>-</td>
+						</tr>
+
+					</tbody>
+				</table>
+				<button id="all-data">All</button> 
+			</div>
+		</main>
+
+		<div class="right-side">
+			<!---------- start navbar ----------->
+			<div class="nav-bar">
+				<button id="menu-btn">
+					<span class="material-icons-sharp">menu</span>
+				</button>
+				<div class="theme">
+					<span class="material-icons-sharp active">wb_sunny</span>
+					<span class="material-icons-sharp">
+					nightlight_round</span>
+				</div>
+
+				<div class="profile">
+					<div class="info">
+						<h2>Maria Ivanova</h2>
+						<h4>06.04.1986</h4>
+						<h5>ID: 1232 2253</h5>
+					</div>
+					<div class="profile-img">
+						<img src="images/photo_1.jpg">
+					</div>
+				</div>
+			</div>
+			<!---------- start consultations ----------->
+			<div class="consultations">
+				<h2>Resent consultations</h2>
+				<div class="doctors">
+					<div class="doctor">
+						<div class="profile-img">
+							<img src="images/doc_1.jpg">
+						</div>
+						<div class="diagnosis">
+							<h4>Volosov T. K. (hepatology)</h4>
+							<p><b>Diagnosis: </b>Proin feugiat pellentesque lorem, ut consectetur felis rhoncus vitae. Sed pellentesque viverra mi at eleifend.</p>
+							<small class="small-date">12.04.2022</small>
+						</div>
+					</div>
+					<div class="doctor">
+						<div class="profile-img">
+							<img src="images/doc_3.jpg">
+						</div>
+						<div class="diagnosis">
+							<h4>Tokarev A. M. (surgery)</h4>
+							<p><b>Diagnosis: </b>Proin feugiat pellentesque lorem, ut consectetur felis rhoncus vitae. Sed pellentesque viverra mi at eleifend.</p>
+							<small class="small-date">05.02.2022</small>
+						</div>
+					</div>
+					<div class="doctor">
+						<div class="profile-img">
+							<img src="images/doc_2.jpg">
+						</div>
+						<div class="diagnosis">
+							<h4>Shikova N. R. (gastroenterology)</h4>
+							<p><b>Diagnosis: </b>Proin feugiat pellentesque lorem, ut consectetur felis rhoncus vitae. Sed pellentesque viverra mi at eleifend.</p>
+							<small class="small-date">27.12.2021</small>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+	<script src="labs.js"></script>
+</body>
+</html>
